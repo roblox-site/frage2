@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>🗓️ Geburtstag</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="step-indicator fade-in-up">Schritt 2/10</div>
+
+  <main class="container fade-in-up">
+    <h1 class="question">Wann hast du Geburtstag?</h1>
+    <p class="subtitle">Wähle dein Geburtsdatum</p>
+
+    <form id="dob-form" class="form-group fade-in-up">
+      <div style="display: flex; gap: 0.5rem; width: 100%; justify-content: space-between;">
+        <select id="day" required></select>
+        <select id="month" required></select>
+        <select id="year" required></select>
+      </div>
+      <p id="error-message" class="error-message"></p>
+      <button type="submit" class="btn btn-primary">Weiter</button>
+    </form>
+  </main>
+
+  <script src="frage2.js"></script>
+</body>
+</html>
